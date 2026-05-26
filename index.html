@@ -1601,6 +1601,69 @@ button { font: inherit; }
   }
 }
 
+.app-row-gallery--five .app-row-card {
+  width: 240px;
+}
+
+
+
+.ai-subpage-body {
+  width: min(1280px, calc(100% - 56px));
+}
+
+.ai-sections-wrap {
+  padding-top: 32px;
+}
+
+.ai-grid-gallery {
+  display: grid;
+  gap: 22px;
+  align-items: start;
+}
+
+.ai-grid-gallery .app-row-card {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.ai-grid-gallery--six {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.ai-grid-gallery--five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.ai-grid-gallery--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 1180px) {
+  .ai-grid-gallery--six,
+  .ai-grid-gallery--five {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .ai-subpage-body {
+    width: min(100%, calc(100% - 32px));
+  }
+  .ai-grid-gallery--six,
+  .ai-grid-gallery--five,
+  .ai-grid-gallery--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-grid-gallery--six,
+  .ai-grid-gallery--five,
+  .ai-grid-gallery--two {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* App 作品子页面修正版 */
 .app-subpage-body {
@@ -2254,7 +2317,7 @@ button { font: inherit; }
           
         </article>
 
-        <article class="panel work-card reveal accent-green" data-gallery="ai">
+        <article class="panel work-card reveal accent-green in-page-card" data-open-page="ai">
           <div class="work-cover"><img src="https://user-assets.sxlcdn.com/images/76564/Fui_HOsZZaz9ilk0u0JnT6B3U-W3.png?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/format/png" alt="ai作品封面" loading="lazy" /></div><div class="top">
             <div><div class="index">03 Category</div><div class="work-title-row"><h3>AI 作品</h3><div class="work-enter"><span>查看作品</span><span class="arrow mini-arrow">→</span></div></div><p>AI 视觉探索、工作流与创意方向。</p></div>
             
@@ -2564,6 +2627,104 @@ button { font: inherit; }
   </section>
 
 
+
+
+    <section class="subpage" id="aiSubpage" aria-hidden="true">
+    <nav class="subpage-topbar">
+      <div class="subpage-brand">
+        <span>AI Design Works</span>
+        <strong>AI作品 · 专题展示</strong>
+      </div>
+      <div class="subpage-tabs">
+        <a href="#aiContentBlock">作品内容</a>
+      </div>
+      <button class="subpage-back" data-close-page>返回首页</button>
+    </nav>
+
+    <main class="subpage-body app-subpage-body ai-subpage-body">
+      <div class="app-sections-wrap ai-sections-wrap" id="aiContentBlock">
+        <section class="app-section-block">
+          <div class="section-title reveal show">
+            <div>
+              <div class="eyebrow">AI WORKS</div>
+              <h2>app插画</h2>
+            </div>
+            <p>App插画 / 场景视觉 / AI辅助创作</p>
+          </div>
+          <div class="ai-grid-gallery ai-grid-gallery--six">
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtCGJ_RBEjjWNzfRC4OPI0QtdO8s.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FtCGJ_RBEjjWNzfRC4OPI0QtdO8s.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 1" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FolBd64Di5ZQzEXbX6HGOuAhsot6.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FolBd64Di5ZQzEXbX6HGOuAhsot6.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 2" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkpA9U_cZ1PgTJQPFhZgYzH_eNjY.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FkpA9U_cZ1PgTJQPFhZgYzH_eNjY.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 3" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fm7WNroli1qthRfh9huNn955fvzI.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fm7WNroli1qthRfh9huNn955fvzI.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 4" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FoEyx445_prnGMS1AdP20Y55qjrd.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FoEyx445_prnGMS1AdP20Y55qjrd.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 5" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsAKINm4JzoiXIjuX5Avyhq4JmyL.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FsAKINm4JzoiXIjuX5Avyhq4JmyL.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 6" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FvDbSwCM2vIGOP2fN-H9t_Thb365.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FvDbSwCM2vIGOP2fN-H9t_Thb365.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 7" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FmU5o9Vor-VLqLvSdaaw6VuxaVhX.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FmU5o9Vor-VLqLvSdaaw6VuxaVhX.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 8" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fip9JV-Sj93NfmvGbs-D991upjCm.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fip9JV-Sj93NfmvGbs-D991upjCm.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 9" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtHlOkk3Jla2Vayo3Ib_50I-YI8x.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FtHlOkk3Jla2Vayo3Ib_50I-YI8x.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 10" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FvuIWXA8X0TBSxFHEayVjEZRyCe9.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FvuIWXA8X0TBSxFHEayVjEZRyCe9.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 11" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fj_tnBHh1fok8FgUZZ18i6TgiBbK.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fj_tnBHh1fok8FgUZZ18i6TgiBbK.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 12" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FpUFuwE_lmPCTPxI1Xwu6QbHTxlo.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FpUFuwE_lmPCTPxI1Xwu6QbHTxlo.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 13" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fkk6dnMQP5b4WrfukP0rjhUdZXGN.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fkk6dnMQP5b4WrfukP0rjhUdZXGN.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 14" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FuX2UU18jO__z6VzrEfgf_ann0LO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FuX2UU18jO__z6VzrEfgf_ann0LO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 15" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkQfkZ33FFE5fi2PQiKpPwYr_OEq.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FkQfkZ33FFE5fi2PQiKpPwYr_OEq.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 16" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fiz9W7lzIXmn-ztKkVCE2YT6WDd7.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fiz9W7lzIXmn-ztKkVCE2YT6WDd7.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 17" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fufx05DtnaPSH9wSRG_ibovpOaAd.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fufx05DtnaPSH9wSRG_ibovpOaAd.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 18" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FmVbyVt0nfm9mXkeyi-lb8N-DNsr.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FmVbyVt0nfm9mXkeyi-lb8N-DNsr.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 19" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhD4t0dbk1SqT8qzrXOrEwzMwsf2.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FhD4t0dbk1SqT8qzrXOrEwzMwsf2.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 20" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FrU2Vg_4BQGsXBX3ki9dMgCAfTpB.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FrU2Vg_4BQGsXBX3ki9dMgCAfTpB.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 21" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FvKpACKihGlITd7iafy5UkmiCz1S.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FvKpACKihGlITd7iafy5UkmiCz1S.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 22" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FuGg83vh--mQnLH_SMD3WiJbNDOG.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FuGg83vh--mQnLH_SMD3WiJbNDOG.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 23" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FgWYjERFALDaLQ0wbwDjOYmPbGjM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FgWYjERFALDaLQ0wbwDjOYmPbGjM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app插画 24" loading="lazy"></article>
+          </div>
+        </section>
+
+        <section class="app-section-block">
+          <div class="section-title reveal show">
+            <div>
+              <div class="eyebrow">AI WORKS</div>
+              <h2>banner设计</h2>
+            </div>
+            <p>Banner视觉 / 活动主图 / 营销画面设计</p>
+          </div>
+          <div class="ai-grid-gallery ai-grid-gallery--two">
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsPITPEeGQyP8JZ1lYu7RHR_S8mp.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FsPITPEeGQyP8JZ1lYu7RHR_S8mp.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 1" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FuAkJkI2fmcfROiG5GMtx8fcIj3A.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FuAkJkI2fmcfROiG5GMtx8fcIj3A.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 2" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FiUVZJXhAHPtkOCRltG_98emojY0.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FiUVZJXhAHPtkOCRltG_98emojY0.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 3" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fn6KksX6XhNKItWxtRbXpRq1lq_9.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fn6KksX6XhNKItWxtRbXpRq1lq_9.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 4" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FnVDNUdhXHMP0LvvARi5SdEq-bP7.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FnVDNUdhXHMP0LvvARi5SdEq-bP7.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 5" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtEgpP6eE65RVUHCl4VYv0qTltoe.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FtEgpP6eE65RVUHCl4VYv0qTltoe.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 6" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FnM6t1TSSnbO1JCQBvUU7zAP_0Wa.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FnM6t1TSSnbO1JCQBvUU7zAP_0Wa.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 7" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FgGbLQyLrf7OHJtH6dhsiMArn23o.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FgGbLQyLrf7OHJtH6dhsiMArn23o.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="banner设计 8" loading="lazy"></article>
+          </div>
+        </section>
+
+        <section class="app-section-block">
+          <div class="section-title reveal show">
+            <div>
+              <div class="eyebrow">AI WORKS</div>
+              <h2>字体设计</h2>
+            </div>
+            <p>字体造型 / 标题字设计 / 视觉识别延展</p>
+          </div>
+          <div class="ai-grid-gallery ai-grid-gallery--five">
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fi679AVw00QjrZGdu2H3PreBzaFI.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fi679AVw00QjrZGdu2H3PreBzaFI.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 1" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fv5Vbb_av7ROhr69H0gnK3K15fuW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fv5Vbb_av7ROhr69H0gnK3K15fuW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 2" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fl2R0Ydz_0Pd5gqKuKBjPk3Yq4mF.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fl2R0Ydz_0Pd5gqKuKBjPk3Yq4mF.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 3" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FmmrVsBlxtulIzxAfpbWCAw6c3Qj.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FmmrVsBlxtulIzxAfpbWCAw6c3Qj.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 4" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fq9lllB8Am4woRO8BNfdjM-LC1zn.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Fq9lllB8Am4woRO8BNfdjM-LC1zn.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 5" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Frw0HzPNHybfVy44d27rsHM1rgyN.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/Frw0HzPNHybfVy44d27rsHM1rgyN.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 6" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FrBv6FpP-qjD0ebaLWvLv5RGqBWx.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FrBv6FpP-qjD0ebaLWvLv5RGqBWx.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 7" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhFGg-jilWbzyDKIEvBZdcUcb-Vs.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FhFGg-jilWbzyDKIEvBZdcUcb-Vs.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 8" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FoPB9YjwZpm_mEgG-5KpdgboFAC2.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FoPB9YjwZpm_mEgG-5KpdgboFAC2.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 9" loading="lazy"></article>
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FlMqQWiGrWBtCDDVrF-MlLtnvhue.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png"><img src="https://user-assets.sxlcdn.com/images/76564/FlMqQWiGrWBtCDDVrF-MlLtnvhue.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="字体设计 10" loading="lazy"></article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </section>
+
+
   <section class="subpage" id="webSubpage" aria-hidden="true">
     <nav class="subpage-topbar">
       <div class="subpage-brand">
@@ -2835,6 +2996,33 @@ button { font: inherit; }
   <div class="section-title reveal show">
     <div>
       <div class="eyebrow">APP WORKS</div>
+      <h2>app活动页</h2>
+    </div>
+    <p>活动运营页面 / 转化视觉 / App场景化设计</p>
+  </div>
+  <div class="app-row-gallery app-row-gallery--five">
+            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fut_r_eQvJ5jJXG5pWD8wTjFujSk.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Fut_r_eQvJ5jJXG5pWD8wTjFujSk.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 1" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fumg8iHml3oxb7kAduchx5Dc_OxJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Fumg8iHml3oxb7kAduchx5Dc_OxJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 2" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FjhVEZxYwpzivpSO6lyhzwZeANgq.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/FjhVEZxYwpzivpSO6lyhzwZeANgq.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 3" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Frf1sujmH29Y9rPK3LJmM_fQkI39.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Frf1sujmH29Y9rPK3LJmM_fQkI39.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 4" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fr6KP_MvsgsXU43rzVSKCHmeNzWO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Fr6KP_MvsgsXU43rzVSKCHmeNzWO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 5" loading="lazy">
+</article>
+  </div>
+</section>
+
+        <section class="app-section-block">
+  <div class="section-title reveal show">
+    <div>
+      <div class="eyebrow">APP WORKS</div>
       <h2>3Dicon图标设计</h2>
     </div>
     <p>3D 图标体系 / 功能入口 / 质感视觉设计</p>
@@ -2947,7 +3135,7 @@ button { font: inherit; }
         </div>
       </section>
 
-      <div class="app-sections-wrap" id="appContentBlock">
+            <div class="app-sections-wrap" id="appContentBlock">
         <section class="app-section-block">
   <div class="section-title reveal show">
     <div>
@@ -2959,13 +3147,17 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fp2f1eZq3P2_Iqib04USaF6QNnEY.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fp2f1eZq3P2_Iqib04USaF6QNnEY.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="应用商店页设计 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsKl2tVHYhmJg4RG60lwH_LxrU5R.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsKl2tVHYhmJg4RG60lwH_LxrU5R.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FsKl2tVHYhmJg4RG60lwH_LxrU5R.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="应用商店页设计 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtcrIrg2PS9_C5zfKMZnNXJTpv5m.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtcrIrg2PS9_C5zfKMZnNXJTpv5m.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FtcrIrg2PS9_C5zfKMZnNXJTpv5m.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="应用商店页设计 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FgoviqmavHzA5QgtSd8FCGx4AsVL.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FgoviqmavHzA5QgtSd8FCGx4AsVL.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FgoviqmavHzA5QgtSd8FCGx4AsVL.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="应用商店页设计 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fi41zbmzIZfJef4Ikb004E5GelY4.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fi41zbmzIZfJef4Ikb004E5GelY4.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fi41zbmzIZfJef4Ikb004E5GelY4.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="应用商店页设计 5" loading="lazy">
 </article>
   </div>
@@ -2981,13 +3173,17 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FgqgGeNewhhQcGvd7DktVJLFZkvb.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FgqgGeNewhhQcGvd7DktVJLFZkvb.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="医生端功能页设计 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fj1s3-VQ05a_epxBIOO-o8MiROiM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fj1s3-VQ05a_epxBIOO-o8MiROiM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fj1s3-VQ05a_epxBIOO-o8MiROiM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="医生端功能页设计 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhoilnCTFeANBa1K8h5V_a-EOt-0.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhoilnCTFeANBa1K8h5V_a-EOt-0.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhoilnCTFeANBa1K8h5V_a-EOt-0.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="医生端功能页设计 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FmZjPzRkmrnZ9YoLSuvmof_D3BmW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FmZjPzRkmrnZ9YoLSuvmof_D3BmW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FmZjPzRkmrnZ9YoLSuvmof_D3BmW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="医生端功能页设计 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fn6TZMD2ThCMH4DEUmL6pkvz42-m.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fn6TZMD2ThCMH4DEUmL6pkvz42-m.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fn6TZMD2ThCMH4DEUmL6pkvz42-m.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="医生端功能页设计 5" loading="lazy">
 </article>
   </div>
@@ -3003,13 +3199,17 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkFRTJsu9OdubbY32oRRZE4r00zg.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FkFRTJsu9OdubbY32oRRZE4r00zg.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="医疗页面设计 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FlIDalXG_e54Nl-CuGBVQdsWcbtu.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FlIDalXG_e54Nl-CuGBVQdsWcbtu.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FlIDalXG_e54Nl-CuGBVQdsWcbtu.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpg" alt="医疗页面设计 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsIEMF7xcTxCA2Q8LjJwX2ZAX_t6.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsIEMF7xcTxCA2Q8LjJwX2ZAX_t6.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FsIEMF7xcTxCA2Q8LjJwX2ZAX_t6.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="医疗页面设计 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhFebo7ClO3QKsxaRiCFVY2lpP4N.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhFebo7ClO3QKsxaRiCFVY2lpP4N.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhFebo7ClO3QKsxaRiCFVY2lpP4N.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="医疗页面设计 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FonnXBoK6mvU4ixdGBEw9I6Xvdtv.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FonnXBoK6mvU4ixdGBEw9I6Xvdtv.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg">
   <img src="https://user-assets.sxlcdn.com/images/76564/FonnXBoK6mvU4ixdGBEw9I6Xvdtv.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg" alt="医疗页面设计 5" loading="lazy">
 </article>
   </div>
@@ -3025,13 +3225,17 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhuFRPW-3AKGqBLK9T84gxTsh-XJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhuFRPW-3AKGqBLK9T84gxTsh-XJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="健康能两周活动页 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FpiVNGlg6RHdVXeBEz7rCNubXs9k.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FpiVNGlg6RHdVXeBEz7rCNubXs9k.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FpiVNGlg6RHdVXeBEz7rCNubXs9k.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="健康能两周活动页 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FmauhVt-9gTLvpdI2PJZq8CCrUDT.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FmauhVt-9gTLvpdI2PJZq8CCrUDT.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FmauhVt-9gTLvpdI2PJZq8CCrUDT.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="健康能两周活动页 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkjdocS7eRAyHWp7jtR3UW5z8_OW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkjdocS7eRAyHWp7jtR3UW5z8_OW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FkjdocS7eRAyHWp7jtR3UW5z8_OW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="健康能两周活动页 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FqqxG6mNWf8nAs81Oyd6UH36fqbD.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FqqxG6mNWf8nAs81Oyd6UH36fqbD.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FqqxG6mNWf8nAs81Oyd6UH36fqbD.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="健康能两周活动页 5" loading="lazy">
 </article>
   </div>
@@ -3047,13 +3251,17 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FqboGGl-IGV0buwy0rnGbLyedPr_.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FqboGGl-IGV0buwy0rnGbLyedPr_.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="活动页设计 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fi4O61aKES1yJxaFpczO-wVinTdt.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fi4O61aKES1yJxaFpczO-wVinTdt.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fi4O61aKES1yJxaFpczO-wVinTdt.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="活动页设计 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtkQ4q1tH_XpjkrC3oXSxY1HWZ8q.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtkQ4q1tH_XpjkrC3oXSxY1HWZ8q.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FtkQ4q1tH_XpjkrC3oXSxY1HWZ8q.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="活动页设计 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhhUo3ll-T4_f5TlVr-8xbXke11w.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhhUo3ll-T4_f5TlVr-8xbXke11w.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhhUo3ll-T4_f5TlVr-8xbXke11w.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="活动页设计 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhS5E1t15RhLwrDya75Oho3PpN__.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhS5E1t15RhLwrDya75Oho3PpN__.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhS5E1t15RhLwrDya75Oho3PpN__.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="活动页设计 5" loading="lazy">
 </article>
   </div>
@@ -3069,13 +3277,17 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fl-FFYzhmbeEn8CvtF1vFTzgen1E.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fl-FFYzhmbeEn8CvtF1vFTzgen1E.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="运营活动页 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fsyzse_qQ9sb-FwJ065jAO5li8jP.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fsyzse_qQ9sb-FwJ065jAO5li8jP.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fsyzse_qQ9sb-FwJ065jAO5li8jP.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="运营活动页 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fnsnrszs8HuQKPmjVKH1us21-i3h.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fnsnrszs8HuQKPmjVKH1us21-i3h.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fnsnrszs8HuQKPmjVKH1us21-i3h.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="运营活动页 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsnJaN8BuwuaF4VLcIdL07Ei_PeM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FsnJaN8BuwuaF4VLcIdL07Ei_PeM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FsnJaN8BuwuaF4VLcIdL07Ei_PeM.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="运营活动页 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Frb6xmNrVq_h6_Py-xqcJ2rr-bUi.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Frb6xmNrVq_h6_Py-xqcJ2rr-bUi.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Frb6xmNrVq_h6_Py-xqcJ2rr-bUi.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="运营活动页 5" loading="lazy">
 </article>
   </div>
@@ -3091,17 +3303,48 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FolBwpRVDbEdQNiT8u1DxJsovOn3.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FolBwpRVDbEdQNiT8u1DxJsovOn3.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="轻拟物风引导页设计 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhSm9sv5GDDdCwGmL76rURvTdXHO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhSm9sv5GDDdCwGmL76rURvTdXHO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhSm9sv5GDDdCwGmL76rURvTdXHO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="轻拟物风引导页设计 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FqckmXcSde354iqjs1gUW4BvnOrb.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FqckmXcSde354iqjs1gUW4BvnOrb.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FqckmXcSde354iqjs1gUW4BvnOrb.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="轻拟物风引导页设计 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkXtaNBoMNoPrA9b2iTJuLBNfnv6.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkXtaNBoMNoPrA9b2iTJuLBNfnv6.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FkXtaNBoMNoPrA9b2iTJuLBNfnv6.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="轻拟物风引导页设计 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FusXwlNoBfVuo5Fttaa6BrdNJI7D.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FusXwlNoBfVuo5Fttaa6BrdNJI7D.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FusXwlNoBfVuo5Fttaa6BrdNJI7D.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="轻拟物风引导页设计 5" loading="lazy">
 </article>
   </div>
 </section>
+        <section class="app-section-block">
+  <div class="section-title reveal show">
+    <div>
+      <div class="eyebrow">APP WORKS</div>
+      <h2>app活动页</h2>
+    </div>
+    <p>活动运营页面 / 转化视觉 / App场景化设计</p>
+  </div>
+  <div class="app-row-gallery app-row-gallery--five">
+        <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fut_r_eQvJ5jJXG5pWD8wTjFujSk.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Fut_r_eQvJ5jJXG5pWD8wTjFujSk.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 1" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fumg8iHml3oxb7kAduchx5Dc_OxJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Fumg8iHml3oxb7kAduchx5Dc_OxJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 2" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FjhVEZxYwpzivpSO6lyhzwZeANgq.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/FjhVEZxYwpzivpSO6lyhzwZeANgq.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 3" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Frf1sujmH29Y9rPK3LJmM_fQkI39.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Frf1sujmH29Y9rPK3LJmM_fQkI39.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 4" loading="lazy">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fr6KP_MvsgsXU43rzVSKCHmeNzWO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+  <img src="https://user-assets.sxlcdn.com/images/76564/Fr6KP_MvsgsXU43rzVSKCHmeNzWO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="app活动页 5" loading="lazy">
+</article>
+  </div>
+</section>
+
         <section class="app-section-block">
   <div class="section-title reveal show">
     <div>
@@ -3113,13 +3356,17 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fl9gfqwZIwstiIbOf2STPxsa3t6a.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fl9gfqwZIwstiIbOf2STPxsa3t6a.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="3Dicon图标设计 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkUO1VkCirt5r6MNzjIIp0YoFA0q.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkUO1VkCirt5r6MNzjIIp0YoFA0q.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FkUO1VkCirt5r6MNzjIIp0YoFA0q.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="3Dicon图标设计 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FpKG2325xPVte5fH01Ig9icfpTvv.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FpKG2325xPVte5fH01Ig9icfpTvv.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FpKG2325xPVte5fH01Ig9icfpTvv.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="3Dicon图标设计 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FpS2dy6UswDJwtsfeb4xMy4l91it.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FpS2dy6UswDJwtsfeb4xMy4l91it.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FpS2dy6UswDJwtsfeb4xMy4l91it.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="3Dicon图标设计 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FuDSzIvi4yLnodRVVKXr3VziNCfC.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FuDSzIvi4yLnodRVVKXr3VziNCfC.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FuDSzIvi4yLnodRVVKXr3VziNCfC.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="3Dicon图标设计 5" loading="lazy">
 </article>
   </div>
@@ -3135,11 +3382,14 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fhkr7joUjEJ9g718nOdjqazuLGnJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fhkr7joUjEJ9g718nOdjqazuLGnJ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="引导页插画 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhKblmc_jSjAI-TGSfiaBF7tv_iH.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhKblmc_jSjAI-TGSfiaBF7tv_iH.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhKblmc_jSjAI-TGSfiaBF7tv_iH.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="引导页插画 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtQX3J5C2bVlLWruN7sjjs7Vyljp.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FtQX3J5C2bVlLWruN7sjjs7Vyljp.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FtQX3J5C2bVlLWruN7sjjs7Vyljp.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="引导页插画 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FjiT4T0N4sJxigAX73HJHpqHq8XW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FjiT4T0N4sJxigAX73HJHpqHq8XW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FjiT4T0N4sJxigAX73HJHpqHq8XW.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="引导页插画 4" loading="lazy">
 </article>
   </div>
@@ -3155,11 +3405,14 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fvdr6Z-YmI2XtQPzbr_zGMOpp8Bt.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fvdr6Z-YmI2XtQPzbr_zGMOpp8Bt.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="引导页插画 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fq-cXqR6vuXHG_iGEruc2KMFJWny.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fq-cXqR6vuXHG_iGEruc2KMFJWny.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fq-cXqR6vuXHG_iGEruc2KMFJWny.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="引导页插画 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fi8RAEy6V7VdydLJ-gEJW6wmwfb-.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/Fi8RAEy6V7VdydLJ-gEJW6wmwfb-.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/Fi8RAEy6V7VdydLJ-gEJW6wmwfb-.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="引导页插画 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkebBE8KAZw19joEYF87A_NKobT1.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FkebBE8KAZw19joEYF87A_NKobT1.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FkebBE8KAZw19joEYF87A_NKobT1.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png" alt="引导页插画 4" loading="lazy">
 </article>
   </div>
@@ -3175,15 +3428,20 @@ button { font: inherit; }
   <div class="app-row-gallery">
     <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FowDrB2y21LAGT28-QL5D3JKbtSb.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FowDrB2y21LAGT28-QL5D3JKbtSb.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="缺省页插画 1" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FoBOMaDr9JkQyicCypBbYZ2zC083.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FoBOMaDr9JkQyicCypBbYZ2zC083.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FoBOMaDr9JkQyicCypBbYZ2zC083.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="缺省页插画 2" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FgqfVjT6rtTFjHWaLxorqfGaoKYd.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FgqfVjT6rtTFjHWaLxorqfGaoKYd.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FgqfVjT6rtTFjHWaLxorqfGaoKYd.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="缺省页插画 3" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FvJVWOR5DOLqWuT3HxWEqW-CjpmZ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FvJVWOR5DOLqWuT3HxWEqW-CjpmZ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FvJVWOR5DOLqWuT3HxWEqW-CjpmZ.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="缺省页插画 4" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhzaAAPZPFr8PC-SiCW2zIwyS0yO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FhzaAAPZPFr8PC-SiCW2zIwyS0yO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FhzaAAPZPFr8PC-SiCW2zIwyS0yO.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="缺省页插画 5" loading="lazy">
-</article>    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FnX9iLAWNYpkVAbkOLKzI6U_tsTV.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
+</article>
+    <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/FnX9iLAWNYpkVAbkOLKzI6U_tsTV.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png">
   <img src="https://user-assets.sxlcdn.com/images/76564/FnX9iLAWNYpkVAbkOLKzI6U_tsTV.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/format/png" alt="缺省页插画 6" loading="lazy">
 </article>
   </div>
@@ -3563,6 +3821,7 @@ const hudSubpage = document.getElementById("hudSubpage");
 const appSubpage = document.getElementById("appSubpage");
 const ipSubpage = document.getElementById("ipSubpage");
 const webSubpage = document.getElementById("webSubpage");
+const aiSubpage = document.getElementById("aiSubpage");
 const otherSubpage = document.getElementById("otherSubpage");
 
 const subpageMap = {
@@ -3570,6 +3829,7 @@ const subpageMap = {
   app: appSubpage,
   ip: ipSubpage,
   web: webSubpage,
+  ai: aiSubpage,
   other: otherSubpage
 };
 
