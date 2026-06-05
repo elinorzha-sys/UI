@@ -1538,12 +1538,6 @@ button { font: inherit; }
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.motion-works-grid .app-row-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 .other-grid-gallery--three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -2764,7 +2758,6 @@ button { font: inherit; }
         <strong>其他作品 · 专题展示</strong>
       </div>
       <div class="subpage-tabs">
-        <a href="#motionWorksBlock">动效作品</a>
         <a href="#otherContentBlock">作品内容</a>
       </div>
       <button class="subpage-back" data-close-page>返回首页</button>
@@ -2772,22 +2765,6 @@ button { font: inherit; }
 
     <main class="subpage-body app-subpage-body other-subpage-body">
       <div class="app-sections-wrap other-sections-wrap--no-banner" id="otherContentBlock">
-        <section class="app-section-block" id="motionWorksBlock">
-          <div class="section-title reveal show">
-            <div>
-              <div class="eyebrow">MOTION WORKS</div>
-              <h2>动效作品</h2>
-            </div>
-            <p>节奏感动效设计 / 交互反馈展示 / 视觉动态表达</p>
-          </div>
-          <div class="other-grid-gallery other-grid-gallery--icons motion-works-grid">
-            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/lk356e4wG0yRLJwJHybQTT1lGn62.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif"><img src="https://user-assets.sxlcdn.com/images/76564/lk356e4wG0yRLJwJHybQTT1lGn62.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif" alt="动效作品 1" loading="lazy"></article>
-            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/lrIW1SHJk5N_KuXryFns3PDS_Y6k.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif"><img src="https://user-assets.sxlcdn.com/images/76564/lrIW1SHJk5N_KuXryFns3PDS_Y6k.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif" alt="动效作品 2" loading="lazy"></article>
-            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/lnz4Yax57mKOmA8uvtsF203h3hL_.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif"><img src="https://user-assets.sxlcdn.com/images/76564/lnz4Yax57mKOmA8uvtsF203h3hL_.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif" alt="动效作品 3" loading="lazy"></article>
-            <article class="app-row-card" data-page-image="https://user-assets.sxlcdn.com/images/76564/lmNaoz9W5qCWiwt-mQBHETZUD6tf.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif"><img src="https://user-assets.sxlcdn.com/images/76564/lmNaoz9W5qCWiwt-mQBHETZUD6tf.gif?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/gif" alt="动效作品 4" loading="lazy"></article>
-          </div>
-        </section>
-
         <section class="app-section-block">
           <div class="section-title reveal show">
             <div>
@@ -3158,8 +3135,8 @@ button { font: inherit; }
           <h1>app作品</h1>
           <p>围绕移动端视觉设计、应用包装、插画延展与界面表达，呈现更完整、更具品牌感的 App 设计作品。</p>
         </div>
-        <div class="app-hero-media" data-page-image="https://user-assets.sxlcdn.com/images/76564/FuI0TRBr7hw8I82ZPkh29IHz35lE.png?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/format/png">
-          <img src="https://user-assets.sxlcdn.com/images/76564/FuI0TRBr7hw8I82ZPkh29IHz35lE.png?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/format/png" alt="app作品 banner" loading="lazy">
+        <div class="app-hero-media" data-page-image="assets/app-portfolio-banner.png">
+          <img src="assets/app-portfolio-banner.png" alt="app作品 banner" loading="lazy">
         </div>
       </section>
 
@@ -3934,26 +3911,7 @@ document.addEventListener("keydown", (event) => {
 
 
 const BALANCED_IP_IMAGES = ["https://user-assets.sxlcdn.com/images/76564/FhoP6FnRVETtRUGbfAbSVxshqn3u.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/FswYYXxJ7TfNs_BveaB0zRLD_H0c.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/luOaNK_v4ufSB3I2C9D4MmO72cTh.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/lghyJFNPTcicizvL7-LHLNhj5wlo.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/lvOW_PnINC7QlTWV_AWEuXIhd2bV.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/FhGDrCPpx4-nOlLZBPBH0UhFZ9n1.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/lk-x9JO6MHMKTReevxd8b-yQ7x50.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/FkNdveLdGuu9z1hbfiVUMOkNflUb.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/FmxEV_wUj7MEVAuo8F8w7ZRSJ37H.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/lixtOQHbC5ytL_w2X1VP2W3K-5JS.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/FkSQSvHwyAhSSg1ZHBB281jV-j82.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/lv6BU98dWD81UbgSw2CHMRfW7mjT.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/Fp9TLW7IzUIO1brPqOJ_MsVgBA_D.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/ll4A-FKg4urC5SCB-esP-FHml-gu.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/FsZrqnfRzAm9PiykxjlFHW81_jlP.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/looD97Brow0I96EjS1f9Ktf90oKS.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg"];
-const BALANCED_WEB_IMAGES = [
-  "https://user-assets.sxlcdn.com/images/76564/Fr3Da1Y4xRVzXZ0SF1Y_2BUgUEOl.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/FlQzeRioCWnt9EJnH6YjpZaH-ZU5.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/FgsyJB7RYmNmpuUbd5mAQx4qQEh3.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/FqgQEJ91P6tnHClqbafBTukYrB54.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/FgBvB82BvonTAConOF8DfS-sxPi1.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/Fvo8MEURvE9F1PJoHbrVzOA01V23.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/FoUEGWnmbRR-I1kt259hhPrdJCkD.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/Fr3FdkvITBtEMkQf287oPMaTvyuD.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/FskZfTgQQvdiEa2QATSyNcrS_yRC.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/Figi8zktyEqHLTvmkdGNI7qh_wvg.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/Fo9jEOOxcwrIxkQDw9mU9VElfzSU.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/Fvo0CmIBH8LE1RN2yEwRvuS6mE30.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/FnVd0xUkLGoU3oBCyOY_Q654aFlC.png?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/format/png",
-  "https://user-assets.sxlcdn.com/images/76564/Fj7z2dkrTV30jMPLlfoP3CqehFtN.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg",
-  "https://user-assets.sxlcdn.com/images/76564/FqzHH8Ibs-QDaAXg3zqVIFTPcJbT.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg",
-  "https://user-assets.sxlcdn.com/images/76564/FuqWHyGUXoxwuFmbvvNS4UXwvyhv.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg",
-  "https://user-assets.sxlcdn.com/images/76564/Fi3QPBSW1qRyzl-Fl5thAnxdRBma.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg",
-  "https://user-assets.sxlcdn.com/images/76564/FtEU2ZvppABQJfxWndVfDvVvd70i.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg"
-];
+const BALANCED_WEB_IMAGES = ["https://user-assets.sxlcdn.com/images/76564/Fr3Da1Y4xRVzXZ0SF1Y_2BUgUEOl.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/FlQzeRioCWnt9EJnH6YjpZaH-ZU5.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/FgsyJB7RYmNmpuUbd5mAQx4qQEh3.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/FqgQEJ91P6tnHClqbafBTukYrB54.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/FgBvB82BvonTAConOF8DfS-sxPi1.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/Fvo8MEURvE9F1PJoHbrVzOA01V23.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/FoUEGWnmbRR-I1kt259hhPrdJCkD.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/Fr3FdkvITBtEMkQf287oPMaTvyuD.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/FskZfTgQQvdiEa2QATSyNcrS_yRC.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/Figi8zktyEqHLTvmkdGNI7qh_wvg.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/Fo9jEOOxcwrIxkQDw9mU9VElfzSU.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/Fvo0CmIBH8LE1RN2yEwRvuS6mE30.png?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/format/png", "https://user-assets.sxlcdn.com/images/76564/Fj7z2dkrTV30jMPLlfoP3CqehFtN.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/FqzHH8Ibs-QDaAXg3zqVIFTPcJbT.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/FuqWHyGUXoxwuFmbvvNS4UXwvyhv.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg", "https://user-assets.sxlcdn.com/images/76564/Fi3QPBSW1qRyzl-Fl5thAnxdRBma.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg", "https://user-assets.sxlcdn.com/images/76564/FtEU2ZvppABQJfxWndVfDvVvd70i.jpg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpeg"];
 
 function balancedColumnsCount() {
   if (window.innerWidth <= 640) return 1;
